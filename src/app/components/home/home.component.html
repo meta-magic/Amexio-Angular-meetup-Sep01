@@ -1,0 +1,40 @@
+
+
+<amexio-row>
+    <amexio-column [size] ="12">
+            <amexio-nav
+            [enable-side-nav-position]="false"
+            [title]="'Angular Meetup'">
+            <amexio-nav-item
+                position-right
+                [type]="'link'"
+                [title]="'Simple Grid'"
+                (onNavItemClick)="onSimpleGrid($event)">
+            </amexio-nav-item>
+            <amexio-nav-item
+            position-right
+            [type]="'link'"
+            [title]="'Template Grid'"
+            (onNavItemClick)="ontemplate($event)">
+        </amexio-nav-item>
+        <amexio-nav-item
+        position-right
+        [type]="'link'"
+        [title]="'Logout'"
+        (onNavItemClick)="onLogOut($event)">
+        </amexio-nav-item>
+        
+        </amexio-nav>
+    </amexio-column>
+</amexio-row>
+
+
+
+
+<amexio-row>
+
+    <amexio-column [size] ="'12'" style="padding-top: 75px">
+        <router-outlet></router-outlet>
+    </amexio-column>
+    
+</amexio-row>

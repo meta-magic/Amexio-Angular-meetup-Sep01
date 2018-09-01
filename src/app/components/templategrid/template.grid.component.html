@@ -1,0 +1,46 @@
+<amexio-datagrid
+    title="Grid With Template"
+    [http-method]="'get'"
+    [http-url]="'assets/data/employee.json'"
+    [data-reader]="'response.data'"
+    [page-size] = "10"
+    [enable-data-filter]="false"
+    (rowSelect)="'getRowData($event)'">
+    <amexio-data-table-column
+    [data-index]="'name'"
+    [data-type]="'string'"
+    [hidden]="false"
+    [text]="'Name'">
+    <ng-template #amexioBodyTmpl let-column let-row="row">
+      <amexio-row>
+        <amexio-column [size]="3">
+          <amexio-image [path]="'assets/images/profile/'+row.profile" [c-class]="'image-round'">
+          </amexio-image>
+        </amexio-column>
+        <amexio-column [size]="9">
+          <amexio-label size="small" [font-color]="'red'">
+            {{row.name}}
+          </amexio-label>
+        </amexio-column>
+      </amexio-row>
+    </ng-template>
+  </amexio-data-table-column>
+  <amexio-data-table-column
+    [data-index]="'email'"
+    [data-type]="'string'"
+    [hidden]="false"
+    [text]="'Email'">
+  </amexio-data-table-column>
+  <amexio-data-table-column
+    [data-index]="'contact'"
+    [data-type]="'string'"
+    [hidden]="false"
+    [text]="'Contact'">
+    <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+      <amexio-label size="small" font-color="white">
+          <i class="fa fa-phone" style="color:white"></i>
+          {{column.text}}
+      </amexio-label>
+  </ng-template>
+  </amexio-data-table-column>
+</amexio-datagrid>

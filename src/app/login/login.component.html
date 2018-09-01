@@ -1,0 +1,46 @@
+<amexio-row>
+    <amexio-column [size] ="4">
+        
+    </amexio-column>
+    <amexio-column [size] ="4">
+     <amexio-card
+         [header]="true"
+         [header-align]="'left'"
+         [footer]="true"
+         [footer-align]="'right'"
+         >
+             <amexio-header>
+                 Login
+             </amexio-header>
+             <amexio-body>
+                <amexio-email-input
+                    [field-label]="'User name'"
+                    [place-holder]="'please enter username'"
+                    [allow-blank]="false"
+                    [error-msg] ="'Please enter username'"
+                    [(ngModel)]="loginModel.username"
+                    [enable-popover]="true"
+                    [icon-feedback]="true">
+                </amexio-email-input>
+                <amexio-password-input
+                    [field-label]="'Password'"   
+                    [(ngModel)]="loginModel.password"                                     
+                    [place-holder]="'enter password'"
+                    [allow-blank]="false"
+                    [icon-feedback]="true"
+                    >
+                </amexio-password-input>
+             </amexio-body>
+             <amexio-action>
+                <amexio-button [label]="'Login'" 
+                [type]="'theme-color'" 
+                [tooltip]="'Primary Button'"
+                (onClick)="onLogin()">
+                </amexio-button>
+             </amexio-action>
+     </amexio-card>
+    </amexio-column>
+    <amexio-column [size] ="4">
+        
+    </amexio-column>
+</amexio-row>

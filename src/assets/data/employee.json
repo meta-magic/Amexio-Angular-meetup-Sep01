@@ -1,0 +1,78 @@
+{
+    "response": {
+      "success": true,
+      "message": "Fetching  Data  Request Succeeded: Profile",
+      "data": [
+        {
+          "name": "Buck Kulkarni",
+          "name_official": "Buck Kulkarni",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 7548412457
+        },
+        {		
+          "name": "Araf Karsh Hamid",
+          "name_official": "Araf Karsh Hamid",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 4567891232
+        },
+        {
+          "name": "ketan Gote",
+          "name_official": "Ketan Gote",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 7845765412
+        },
+        {
+          "name": "Dattaram Gawas",
+          "name_official": "Dattaram Gawas",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 7896541245
+        },
+        {
+          "name": "Sagar Jadhav",
+          "name_official": "Sagar Jadhav",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 2314568457
+        },
+        {
+          "name": "payal Kulkarni",
+          "name_official": "payal Kulkarni",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 1234515478
+        },
+        {
+          "name": "jayashree Abhyankar",
+          "name_official": "jayashree Abhyankar",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 8547562471
+        },
+        {
+          "name": "Rashmi Thakkar",
+          "name_official": "Rashmi Thakkar",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 7548421547
+        },
+        {
+          "name": "Deepali Arvind",
+          "name_official": "Deepali Arvind",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 7451245784
+        },
+        {
+          "name": "Ashwini Agre",
+          "name_official": "Ashwini Agre",
+          "profile": "profile.png",
+          "email": "XYZ@metamagic.in",
+          "contact": 7896541234
+        }
+      ]
+    }
+  }
